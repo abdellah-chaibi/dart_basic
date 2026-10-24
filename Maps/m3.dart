@@ -10,10 +10,16 @@ void main() {
   double? nt = double.tryParse(stdin.readLineSync()!);
   if (na != null && ns != null && nt != null) {
 
-    notes["abdellah"] = na!;
-    notes["abde"] = ns!;
-    notes["abdoo"] = nt!;
+    notes["abdellah"] = na;
+    notes["abde"] = ns;
+    notes["abdoo"] = nt;
     print(notes);
     
   }
+  // ou autre methode
+   notes["abdellah"] = na!;
+    notes["abde"] = ns!;
+    notes["abdoo"] = nt!;
+    print(notes);
+   // ! Vérifie que la note n'est pas null avant de l'ajouter à la Map.
 }
